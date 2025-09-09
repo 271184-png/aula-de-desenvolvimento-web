@@ -1,44 +1,29 @@
 package entidades;
 
-import org.hibernate.annotations.ManyToAny;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Venda {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     public Integer codigo; 
 
-    public double hora;
+    public LocalDateTime horario;
 
-    public Integer valor_total;
+    public Integer valorTotal;
 
-    public Integer quantidade_total;
+    public Integer quantidadeTotal;
 
-
-    @ManyToAny
+    @ManyToOne
     public Cliente cliente;
 
-    @ManyToAny
+    @ManyToOne
     public Funcionario funcionario;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

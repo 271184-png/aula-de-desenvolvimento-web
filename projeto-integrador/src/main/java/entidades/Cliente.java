@@ -14,6 +14,6 @@ public class Cliente {
 
     public String nome;
 
-    public Integer cpf;
+    public String cpf;
 
 }

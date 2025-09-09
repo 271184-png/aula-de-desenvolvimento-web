@@ -20,8 +20,6 @@ public class Produto {
 
     public Integer codigo;
 
-
-
     public String nome;
 
     public Integer quantidade;
@@ -34,5 +32,5 @@ public class Produto {
     public Categoria categoria;
 
     @ManyToOne 
-    Fabricante fabricante;
+    public Fabricante fabricante;
 }
