@@ -68,7 +68,9 @@ INSERT INTO Produto (nome, quantidade, preco, validade, categoria_codigo, fabric
 ('Presunto', 15, 18.0, '2025-09-20', 7, 7), 
 ('Chocolate', 60, 7.5, '2026-03-10', 8, 8), 
 ('Alface', 80, 1.5, '2025-09-08', 9, 9), 
-('Maçã', 70, 2.2, '2025-09-12', 10, 10);
+('Maçã', 70, 2.2, '2025-09-12', 10, 10),
+('air force', 15, 2999.99, '2027-12-31', 1, 1);
+
 
 INSERT INTO ItemVenda (quantidadeParcial, valorParcial, produto_codigo) VALUES 
 (2, 12.5, 1), 
